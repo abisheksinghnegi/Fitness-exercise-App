@@ -5,8 +5,18 @@ import davidlaidimg from '../assets/images/gymdavid.jpg';
 
 const HeroBanner = () => (
   <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} position="relative" p="20px">
-    <Stack fontFamily="Fantasy" fontSize="24px" fontWeight={'bold'} fontStyle={'italic'} sx={{ml:'1020px'}}>CHASE REAL DOPAMINE</Stack>
-    <img src={davidlaidimg} alt="hero-banner" className="hero-banner-img" align="right"/>
+    <Box 
+      component="img"
+      src={davidlaidimg}
+      alt="hero-banner"
+      sx={{ 
+        width: { lg: '100%', xs: '100%' }, 
+        maxWidth: '500px', 
+        display: 'flex', 
+        margin: { xs: '20px auto', lg: '0' }, 
+        borderRadius: '12px' 
+      }}
+    />
     <Typography color="#FF2625" fontWeight="600" fontSize="26px">Fitness Club</Typography>
     <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '40px' } }} mb="23px" mt="30px">
       Sweat, Smile <br />
